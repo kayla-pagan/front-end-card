@@ -16,7 +16,7 @@ This project is a solution to the [QR Code Component challenge](https://www.fron
 
 ### Screenshot
 
-![Screenshot of my QR code component](./frontend-card-challenge.jpg)
+![Screenshot of my QR code component](./images/frontend-card-challenge.jpg)
 
 Above is a screenshot of my solution.
 
