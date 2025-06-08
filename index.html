@@ -14,6 +14,13 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --slate-300: hsl(212, 45%, 89%);
+      --slate-500: hsl(216, 15%, 48%);
+      --slate-900: hsl(218, 44%, 22%);
+    }
+
     *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -25,7 +32,7 @@
       width: 100%;
       display: grid;
       place-items: center;
-      background-color: hsl(212, 45%, 89%);
+      background-color: var(--slate-300);
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
     }
@@ -35,8 +42,8 @@
       display: flex;
       flex-direction: column;
       gap: 1em;
-      background-color: hsl(0, 0%, 100%);
-      box-shadow: 0 0 30px hsl(0, 0%, 100%), 0 10px 30px hsl(216, 15%, 48%);
+      background-color: var(--white);
+      box-shadow: 0 0 30px var(--white), 0 10px 30px var(--slate-500);
       padding: 1em 1em 2.5em;
     }
 
@@ -56,13 +63,13 @@
     }
 
     .card h2 {
-      color: hsl(218, 44%, 22%);
+      color: var(--slate-900);
       font-size: 22px;
       font-weight: 700;
     }
 
     .card p {
-      color: hsl(216, 15%, 48%);
+      color: var(--slate-500);
       font-size: 15px;
       font-weight: 400;
     }
@@ -75,10 +82,10 @@
   </style>
 </head>
 <body>
-  <div class="card">
+  <section class="card">
     <img src="./images/image-qr-code.png" alt="Scannable QR Code">
     <h2>Improve your front-end skills by building projects</h2>
     <p>Scan the QR Code to visit Frontend Mentor and take your coding skills to the next level.</p>
-  </div>
+  </section>
 </body>
 </html>
